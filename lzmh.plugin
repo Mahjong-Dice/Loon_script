@@ -5,11 +5,11 @@
 #!tag = 去广告
 
 [rewrite]
-^https?:\/\/yuudnn\.lz-qs\.com:9220\/mssp-api\/api\/v1\/mrtb\/getSdkAdSlotList.* reject-200 # 开屏
-^https?:\/\/lzmh\.lz-qs\.com:6025\/lzmh_app_api\/api\/v1\/app3rd/getApp3rdGenreList.* response-body-json-replace value [] # 顶部
+^https?:\/\/yuudnn\.lz-qs\.com:9220\/mssp-api\/api\/v1\/mrtb\/getSdkAdSlotList.* reject-200
+^https?:\/\/lzmh\.lz-qs\.com:6025\/lzmh_app_api\/api\/v1\/app3rd/getApp3rdGenreList.* response-body-json-replace value []
 ^https?:\/\/lzmh\.lz-qs\.com:6025\/lzmh_app_api\/api\/v1\/ad\/getCommunityAd?.* reject-200
-^https?:\/\/lzmh\.lz-qs\.com:6025\/lzmh_app_api\/api\/v1\/ad\/getAdAccessConfig?.* reject-200  
-^https?:\/\/lzmh\.lz-qs\.com:6025\/lzmh_app_api\/api\/v1\/index\/getRecommendList.* reject-200 # 广告列表
-^https?:\/\/lzmh\.lz-qs\.com:6025\/lzmh_app_api\/api\/v1\/index\/getIndexInfo.* reject-200 # 提醒
+^https?:\/\/lzmh\.lz-qs\.com:6025\/lzmh_app_api\/api\/v1\/ad\/getAdAccessConfig?.* reject-200
+^https?:\/\/lzmh\.lz-qs\.com:6025\/lzmh_app_api\/api\/v1\/index\/getRecommendList.* reject-200 
+^https?:\/\/lzmh\.lz-qs\.com:6025\/lzmh_app_api\/api\/v1\/index\/getIndexInfo.* reject-200
 [mitm]
 hostname = yuudnn.lz-qs.com,lzmh.lz-qs.com
