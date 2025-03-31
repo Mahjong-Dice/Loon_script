@@ -5,7 +5,7 @@
 #!tag = 去广告
 
 [rewrite]
-#^https?:\/\/yuudnn\.lz-qs\.com:9220\/mssp-api\/api\/v1\/mrtb\/getSdkAdSlotList.* reject-200
+^https?:\/\/yuudnn\.lz-qs\.com:9220\/mssp-api\/api\/v1\/mrtb\/getSdkAdSlotList.* reject-200
 ^https?:\/\/lzmh\.lz-qs\.com:6025\/lzmh_app_api\/api\/v1\/app3rd/getApp3rdGenreList.* response-body-json-replace value []
 #^https?:\/\/lzmh\.lz-qs\.com:6025\/lzmh_app_api\/api\/v1\/ad\/getCommunityAd?.* reject-200
 #^https?:\/\/lzmh\.lz-qs\.com:6025\/lzmh_app_api\/api\/v1\/ad\/getAdAccessConfig?.* reject-200
